@@ -165,7 +165,7 @@ def cluster_visualization(args):
 
     layout = go.Layout(
         title='Peptide Embeddings',
-        title_font=dict(size=24, color='black', family='Calibri'),  # 使用风格字体
+        title_font=dict(size=24, color='black', family='Calibri'),  
         hovermode='closest'
     )
 

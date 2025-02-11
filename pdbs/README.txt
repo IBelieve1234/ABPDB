@@ -1,0 +1,1 @@
+Please go to http://www.acdb.plus/ABPDB/download.php to download pdbs.tar and ABPDB.csv.

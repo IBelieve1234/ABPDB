@@ -1,1 +1,3 @@
 # ABPDB
+The code is for the paper "ABPDB: A Database for Antibacterial Peptides". 
+We used the method from Can et al. to encode 4872 peptides from ABPDB into a 1280-dimensional space. The embeded vectors are saved in the file protein_data.npz. The similar_structure_search.py corresponds to the similar structure search function in http://www.acdb.plus/ABPDB, while visualization.py corresponds to the visualization function in the same site. The build_protein.py and utils.py files are from the code of Can et al.

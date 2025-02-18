@@ -38,7 +38,7 @@ parser.add_argument('--ft_mode', choices=['base', 'bilevel-h', 'bilevel-b', 'dee
 parser.add_argument("--ft_lr", default=1e-4, type=float)
 parser.add_argument('--ft_epochs', default=8, type=int)
 parser.add_argument("--ft_wd", default=0.0, type=float)
-parser.add_argument("--target_protein_name",default='DRAMP00275',type=str)#DRAMP00275#DRAMP03140#DRAMP03692
+parser.add_argument("--target_protein_name",default='DRAMP00275',type=str)#DRAMP00275
 #distance_threshold
 parser.add_argument("--distance_threshold",default=13,type=int)#160   
  

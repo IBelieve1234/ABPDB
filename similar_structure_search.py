@@ -409,14 +409,3 @@ if __name__ == '__main__':
     set_seed(args.seed)
 
 cluster_visualization_target(args)
-
-"""
-    protein_names = np.load("./amp_pdb.npy", allow_pickle=True)
-    for protein_name in protein_names:
-        args.target_protein_name = protein_name
-        file_path = os.path.join(".", "example", "2D", f"{args.target_protein_name}.html")
-        if os.path.exists(file_path):
-            continue  
-        print(f"{protein_name}...")
-        cluster_visualization_target(args)
-#"""

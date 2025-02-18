@@ -278,15 +278,6 @@ def cluster_visualization(args):
 
 
 if __name__ == '__main__':
-    #print
     print(args)
-    #set seed
     set_seed(args.seed)
-    #training
-    #if args.mode == 'prt':
-    #   pretrain(args)
-    #elif args.mode == 'ft':
-    #   finetune(args)
-
-    #pretrain(args)
     cluster_visualization(args)

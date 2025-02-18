@@ -40,7 +40,7 @@ parser.add_argument('--ft_epochs', default=8, type=int)
 parser.add_argument("--ft_wd", default=0.0, type=float)
 parser.add_argument("--target_protein_name",default='DRAMP00275',type=str)#DRAMP00275
 #distance_threshold
-parser.add_argument("--distance_threshold",default=13,type=int)#160   
+parser.add_argument("--distance_threshold",default=13,type=int)
  
 #parse
 args = parser.parse_args()

@@ -171,7 +171,7 @@ def cluster_visualization_target(args):
         filtered_embeddings = embeddings_matrix[filtered_indices]
         
         try:
-            tsne = TSNE(n_components=2, perplexity=3, random_state=42)
+            tsne = TSNE(n_components=2, perplexity=30, random_state=42)
             embeddings_2d = tsne.fit_transform(filtered_embeddings)
             break
         except ValueError as e:
@@ -192,7 +192,7 @@ def cluster_visualization_target(args):
         filtered_protein_lengths = protein_lengths[filtered_indices]
         filtered_distances = euclidean_distances(filtered_embeddings, [target_embedding]).flatten()
 
-        tsne = TSNE(n_components=2, perplexity=3, random_state=42)
+        tsne = TSNE(n_components=2, perplexity=30, random_state=42)
         embeddings_2d = tsne.fit_transform(filtered_embeddings)
 
         new_target_index = np.where(filtered_indices == target_index)[0][0]

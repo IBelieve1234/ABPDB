@@ -134,7 +134,7 @@ def cluster_visualization(args):
     cluster_labels = dbscan.fit_predict(embeddings_matrix)
 
     #t-SNE
-    tsne = TSNE(n_components=2, random_state=42)
+    tsne = TSNE(n_components=2, perplexity=30,random_state=42)
     embeddings_2d = tsne.fit_transform(embeddings_matrix)
 
     random_seed = 42
